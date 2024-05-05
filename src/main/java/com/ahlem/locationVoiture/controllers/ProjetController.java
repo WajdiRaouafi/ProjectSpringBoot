@@ -31,7 +31,7 @@ public class ProjetController {
     }
 
 
-    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+//    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
     @GetMapping("/all")
     public List<Projet> getallProjets() {
         return projetServiceImp.getAllProjets();

@@ -1,4 +1,4 @@
-package com.ahlem.locationVoiture.controllers;
+package com.gestion.stage.controllers;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -33,10 +33,11 @@ public class TestController {
 		return "Admin Board.";
 	}
 
-
+	@GetMapping("/test")
 //	@PreAuthorize("hasRole('ADMIN')")
-	@GetMapping("/hello")
-	public String helloWorld() {
+	public String Hello() {
 		return "Hello World";
 	}
+
+
 }
